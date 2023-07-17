@@ -1,0 +1,56 @@
+body{
+    background-color: #edeef5;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: auto;
+}
+.status {
+    display: flex;
+    padding:0 0;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 38px;  
+   
+} 
+.information{
+    padding-top: 30px;
+    margin-left: 40px;
+    
+}
+.information h6{
+    font-size: 18px ;
+    font-weight: 500;
+}
+.card{
+    border-radius: 15px;
+    width: 370px;
+    height: 110px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.icon{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+.tab-content input{
+    border: 1px solid #444DDA;
+   }
+   .tab a{
+    color: #444DDA ;
+    font-size:larger;
+    text-decoration: none;
+    margin-left: 80px; 
+  }
+.tab
+{
+    margin-bottom: 10px;
+    margin-left: 40px;  
+    padding-top: 30px;
+}
+
+

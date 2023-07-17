@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERHR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                    <div class="col-sm-2 ">
+                        <div class="toggle">
+                            <a class="btn btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fs-2 bi bi-list"></i>
+                            </a>
+                            </div>
+                    </div>
+                        <div class="col-md-3">
+                          <a class="navbar-brand" href="#">
+                            <img src="C:\Users\malli\Documents\internship\img\unnamed.png" alt="" height="40px" width= "272.85711669921875px" class="d-inline-block align-text-top">
+                          </a>
+                        </div>
+                </div>
+          <div class="d-flex align-items-center">
+            <a  href="#" class="text-decoration-none text-reset me-2">username  
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40"/>
+            </a>
+            <div class="dropdown">
+              <a
+              class="text-reset me-1 dropdown hidden-arrow"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <i class=" fs-4 bi bi-bell bi-lg text-dark"></i>
+              
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Avatar -->
+          <div class="dropdown">
+              <a
+                class="text-reset me-2 dropdown hidden-arrow"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fs-4 bi bi-three-dots-vertical bi-lg text-dark"></i>
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-user-alt pe-2"></i>My Profile</a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-cog pe-2"></i>Settings</a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fas fa-door-open pe-2"></i>Logout</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    
+    
+      <div class="offcanvas offcanvas-start d-flex flex-coumn flex-shrink-0 p-3 bg-light" style="width: 280px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu" >
+              <li class="nav-item" >
+                  <a href="#" class="nav-link align-middle px-0" style="color: #484554;">
+                  <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="index.html" class="nav-link align-middle px-0" style="color: #484554;">
+                  <span class="ms-1 d-none d-sm-inline">Candidate</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a href="form.html" class="nav-link align-middle px-0" style="color: #484554;">
+                  <span class="ms-1 d-none d-sm-inline">Create new position</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a href="job.html" class="nav-link align-middle px-0" style="color: #484554;">
+                <span class="ms-1 d-none d-sm-inline">Manage position</span>
+                </a>
+            </li>
+          </ul>
+          </div>
+            
+            </div>
+        </div>
+    </nav>
+
+    <form action="select.html" id="cratejob">
+        <div class="form-header d-flex mb-4">
+            <span class="stepIndicator">Position information</span>
+            <span class="stepIndicator">Test</span>
+            <span class="stepIndicator">Interview</span>
+        </div>
+
+        <div class="step">
+            <div class="row d-flex justify-content-center align-items-center ">
+              <div class="col-md-6">
+                    <div class="row align-items-center pt-4 py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Position name</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <input type="text" id="inputPassword6" class="form-control " placeholder="Position Name" aria-describedby="passwordHelpInline">
+                          </div>
+                    </div>
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Work type</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <select name="" class="form-select">Select you role
+                                <option value="wfh">WFH</option>
+                                <option value="hybri">Hybrid</option>
+                                <option value="onsite">Onsite</option>
+                            </select>
+                            </div>
+                    </div>
+    
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Location</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <input type="text" id="inputPassword6" class="form-control" placeholder="Location" aria-describedby="passwordHelpInline">
+                          </div>
+                    </div>
+
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Near</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">MRT</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">BTS</label>
+                              </div>
+                          </div>
+                    </div>
+
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Station</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <input type="text" id="inputPassword6" class="form-control" placeholder="MRT/BTS station" aria-describedby="passwordHelpInline">
+                          </div>
+                    </div>
+
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Start date</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                              <input type="date" id="input" class="form-control" placeholder="MRT/BTS station" aria-describedby="passwordHelpInline">
+                              </div>
+                    </div>
+
+                    <div class="row align-items-center py-2">
+                      <div class="col-auto col-md-3 ps-5">
+                          <label for="inputPassword6" class="col-form-label">End date</label>
+                        </div>
+                        <div class="col-auto col-md-8 pe-5">
+                            <input type="date" id="input" class="form-control" placeholder="MRT/BTS station" aria-describedby="passwordHelpInline">
+                        </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5">
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="input" class="col-form-label">Test require</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                
+                              </div>
+                          </div>
+                    </div>
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Test period</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <input type="text" id="inputPassword6" class="form-control" placeholder="How many days?" aria-describedby="passwordHelpInline">
+                          </div>
+                    </div>
+
+                    <div class="row align-items-center py-2">
+                        <div class="col-auto col-md-3 ps-5">
+                            <label for="inputPassword6" class="col-form-label">Test question</label>
+                          </div>
+                          <div class="col-auto col-md-8 pe-5">
+                            <textarea class="form-control" id="textAreaExample" rows="4"
+                                  style="background: #fff; border: 1px solid #444DDA;" placeholder="Test question"></textarea>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row align-items-center py-2">
+                        <h5 class="align-items-center" style="padding-left: 50px; font-size: 20px; font-weight: 600;">Test assessment criteria</h5>
+                    </div>
+                    
+                    <div class="row align-items-center py-2" >
+                        <div class=" col-md-8 ">
+                            <label for="inputPassword6" class="col-form-label">criteria</label>
+                            <input type="text" name="title[]" class="form-control m-input" placeholder="Enter criteria" autocomplete="off">
+                            
+                          </div>
+                    </div>
+                        <div id="newRow"></div>
+                        <button id="addRow" type="button" class="btn btn-info" 
+                        style="background-color:#444DDA ; border: 1px solid #444DDA; border-radius: 20px; color: #fff;">
+                        <i class="bi bi-plus"></i>Add</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="step">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <h5 class="text-cenetr mb-3" 
+              style="padding-left: 150px;  font-size: 20px; font-weight: 600;">
+                Interview criteria
+              </h5>
+              <div class="row align-items-center py-2" >
+                <div class="col-auto col-md-2 ps-5">
+                  <label for="inputPassword6" class="col-form-label">criteria1</label>
+                </div>
+                <div class="col-auto col-md-8 pe-5">
+                  <input type="text" id="inputPassword6" class="form-control " placeholder="criteria" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row align-items-center py-2" >
+                <div class="col-auto col-md-2 ps-5">
+                  <label for="inputPassword6" class="col-form-label">criteria2</label>
+                </div>
+                <div class="col-auto col-md-8 pe-5">
+                  <input type="text" id="inputPassword6" class="form-control " placeholder="criteria" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row align-items-center py-2" >
+                <div class="col-auto col-md-2 ps-5">
+                  <label for="inputPassword6" class="col-form-label">criteria3</label>
+                </div>
+                <div class="col-auto col-md-8 pe-5">
+                  <input type="text" id="inputPassword6" class="form-control " placeholder="criteria" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row align-items-center py-2" >
+                <div class="col-auto col-md-2 ps-5">
+                  <label for="inputPassword6" class="col-form-label">criteria4</label>
+                </div>
+                <div class="col-auto col-md-8 pe-5">
+                  <input type="text" id="inputPassword6" class="form-control " placeholder="criteria" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row align-items-center py-2" >
+                <div class="col-auto col-md-2 ps-5">
+                  <label for="inputPassword6" class="col-form-label">criteria5</label>
+                </div>
+                <div class="col-auto col-md-8 pe-5">
+                  <input type="text" id="inputPassword6" class="form-control " placeholder="criteria" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+            </div>
+          </div>    
+      </div>
+                        
+
+        <div class="form-footer d-flex justify-content-end  py-3 me-5">
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </form>
+    <script>
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+            showTab(currentTab); // Display the current tab
+             
+            function showTab(n) { 
+              // This function will display the specified tab of the form...
+              var x = document.getElementsByClassName("step");
+              x[n].style.display = "block";
+              //... and fix the Previous/Next buttons:
+              
+              if (n == (x.length - 1)) {
+                document.getElementById("nextBtn").innerHTML = "Save";
+              } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
+              }
+              //... and run a function that will display the correct step indicator:
+              fixStepIndicator(n)
+            }
+            
+            function nextPrev(n) {
+              // This function will figure out which tab to display
+              var x = document.getElementsByClassName("step");
+              // Exit the function if any field in the current tab is invalid:
+              if (n == 1 && !validateForm()) return false;
+              // Hide the current tab:
+              x[currentTab].style.display = "none";
+              // Increase or decrease the current tab by 1:
+              currentTab = currentTab + n;
+              // if you have reached the end of the form...
+              if (currentTab >= x.length) {
+                // ... the form gets submitted:
+                document.getElementById("cratejob").submit();
+                return false;
+              }
+              // Otherwise, display the correct tab:
+              showTab(currentTab);
+            }
+            
+            function validateForm() {
+              // This function deals with validation of the form fields
+              var x, y, i, valid = true;
+              x = document.getElementsByClassName("step");
+              y = x[currentTab].getElementsByTagName("input");
+              // A loop that checks every input field in the current tab:
+              for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                  // add an "invalid" class to the field:
+                  y[i].className += " invalid";
+                  // and set the current valid status to false
+                  valid = false;
+                }
+              }
+              // If the valid status is true, mark the step as finished and valid:
+              if (valid) {
+                document.getElementsByClassName("stepIndicator")[currentTab].className += " finish";
+              }
+              return valid; // return the valid status
+            }
+            
+            function fixStepIndicator(n) {
+              // This function removes the "active" class of all steps...
+              var i, x = document.getElementsByClassName("stepIndicator");
+              for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+              }
+              //... and adds the "active" class on the current step:
+              x[n].className += " active";
+            }</script>
+            <script type="text/javascript">
+              // add row
+              $("#addRow").click(function () {
+                  var html = '';
+                  html += '<div class="row align-items-center  py-2">';
+                  html += '<div class= "col-md-8">';
+                  html += '<label for="input" class="col-form-label">criteria</label>'; 
+                  html += '<input type="text" name="title[]" class="form-control m-input" placeholder="Enter criteria" autocomplete="off">';
+                  html += '</div>';
+                  html += '</div>';
+                  
+      
+                  $('#newRow').append(html);
+              });
+              
+              
+          </script>
+          
+          
+
+</body>
+</html>
